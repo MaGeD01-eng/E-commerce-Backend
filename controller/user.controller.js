@@ -1,5 +1,5 @@
 const asyncWrapper = require("../middlewares/asyncWrapper");
-const user = require("../model/Users.model");
+const user = require("../model/users.model");
 const appError = require("../utils/appError");
 const { FAIL, SUCCESS } = require("../utils/httpsstatus");
 

@@ -1,6 +1,6 @@
 const asyncWrapper = require("../middlewares/asyncWrapper");
 const order = require("../model/order.model");
-const product = require("../model/Products.model");
+const product = require("../model/products.model");
 const appError = require("../utils/appError");
 const { FAIL, SUCCESS } = require("../utils/httpsstatus");
 
