@@ -11,12 +11,20 @@ const routerorder = require("./routes/order.route");
 
 
 
-
+const fs = require("fs");
+const path = require("path")
 
 
 //database
 connectDB();
 
+
+
+const uploadsDir = path.join(__dirname, "uploads");
+if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+    console.log("uploads folder created!...");
+}
 
 //application
 const app = express();
